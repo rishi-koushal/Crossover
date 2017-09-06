@@ -1,0 +1,210 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8" />
+	<title>Login Form</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<script src="assets/scripts/wow.min.js"></script>
+<script src="assets/scripts/wow.js"></script>
+	
+	
+
+	<link href="assets/css/pages/login-soft.css" rel="stylesheet" type="text/css"/>
+<link  rel="stylesheet" href="assets/css/animate.css">
+	<style type="text/css">
+	body {
+	/*background-image: url(images1/sherlock_wallpaper_photos_440_perfect.jpg);*/
+background-image: url(images1/sherlock-hd-wallpaper-games-movie-images-sherlock-wallpaper.jpg);
+ /*background-image: url(images1/1360-768-518301.jpg);*/
+ /*background-image: url(images1/1360-768-518303.jpg);*/
+
+display: block;
+	background-size: cover;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+.header{
+    left: 50%;
+    margin-left: -512px; 
+	  /* 50% */
+  }
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+.header{
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+}
+    </style>
+<script>
+new WOW().init();
+</script>
+</head>
+
+<body class="login">
+  <p>&nbsp;</p>
+     <p>&nbsp;</p> 
+     <p>&nbsp;</p>
+ 
+	
+	
+	<div class="content  wow zoomIn animated" data-wow-delay="0s">
+		
+          
+         
+			<h3 align="center" class="form-title">Register</h3>
+            		<hr>
+
+		
+			<div class="control-group  wow zoomIn animated" data-wow-delay=".3s">
+				<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+	  </div>
+	  <div class="control-group wow zoomIn animated" data-wow-delay=".6s">
+				<label class="control-label visible-ie8 visible-ie9"></label>
+				
+			</div>
+			<div class="form-actions wow zoomIn animated" data-wow-delay=".9s">
+				    <form name="cform" id="cform" action="vali.php" method="post" >
+    
+  
+      <input type="text" id="cn" name="cn" placeholder="Name"  onblur="cvalidate1()" />
+       <font color="#FF0000"><span id="errfn1"></span></font>
+       <br>
+  <input type="text" id="cc" name="cc" placeholder="College Name" onBlur="cvalidate2()" />
+ <font color="#FF0000"><span id="errfn2"></span></font>
+  <br/>
+ 
+ 
+  <label>Dept: </label>
+ 
+      <select name="dpt" id="dpt">
+      <option value="CSE">CSE</option>
+      <option value="IT">IT</option>
+      <option value="ECE">ECE</option>
+      <option value="EEE">EEE</option>
+      <option value="MECH">MECH</option>
+      <option value="CIVIL">CIVIL</option>
+      <option value="OTHERS">OTHERS</option>
+      </select>
+  
+ 
+  
+  <label>Year: </label>
+ 
+      <select name="yr" id="yr">
+      <option value="I">I</option>
+      <option value="II">II</option>
+      <option value="III">III</option>
+      <option value="IV">IV</option>
+      </select> 
+      
+       <input type="text" id="cm" name="cm" placeholder="Mail id" onBlur="cvalidate3()" />
+ <font color="#FF0000"><span id="errfn3"></span></font>
+  <br/>
+      
+ 
+      <input type="password" id="p" name="p" placeholder="Password" onBlur="cvalidate4()" />
+  <font color="#FF0000"><span id="errfn4"></span></font>
+  <br/>
+
+       <input type="password" id="pw" name="pw" placeholder="Confirm Password" onBlur="cvalidate5()" />
+  <font color="#FF0000"><span id="errfn5"></span></font>
+  <br/>
+  
+  
+  
+ 
+<button type="submit" id="submit" name="Submit" class="submit" value="Submit" bgcolor="#006" onClick="Result();"> <center>
+   Submit 
+
+</center></button>
+          </form>
+</div>
+		
+
+	</div>
+	
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+  <script type="text/javascript">
+  function cvalidate1() 
+    {
+        if(cform.cn.value.length==0)
+        {
+           document.getElementById('errfn1').innerHTML="*";
+        }
+		else
+		{
+			document.getElementById('errfn1').innerHTML="";
+		}
+	}
+	function cvalidate2()
+	{
+       if(cform.cc.value.length==0)
+        {
+           document.getElementById('errfn2').innerHTML="*";
+        }
+		else
+		{
+			document.getElementById('errfn2').innerHTML="";
+		}
+
+	}
+	function cvalidate3()
+	{
+	   if(cform.cm.value.length==0)
+        {
+           document.getElementById('errfn3').innerHTML="*";
+        }
+		else
+		{
+			document.getElementById('errfn3').innerHTML="";
+		}
+
+	}
+	
+	function cvalidate4()
+	 {
+		if(cform.p.value.length<8)
+         {
+           document.getElementById('errfn4').innerHTML="*";
+         }
+		 else
+		{
+			document.getElementById('errfn4').innerHTML="";
+		}
+
+	 }
+	function cvalidate5()	
+	{
+		if(cform.pw.value.length<8)
+        {
+           document.getElementById('errfn5').innerHTML="Re-enter your password correctly";
+        }
+		else
+		{
+			document.getElementById('errfn5').innerHTML="";
+		}
+
+	}
+</script>
+</html>

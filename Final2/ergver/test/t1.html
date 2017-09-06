@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.background{
+   background-image: url("book1.jpg");
+background-color:#5C4033;
+    min-height: 650px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.transbox {
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    r:1px solid red;
+    margin: 100px 50px 70px 80px;
+    padding-top:0px;
+    padding-right: 30px;   
+    padding-left: 80px;
+    float:right;
+    border: 3px solid #5C3317;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+.button {
+     
+    border: none;
+    color: #5C4033;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 300px 180px 170px 250px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float:left;
+}
+
+.button1 {
+    background-color:#5C4033;
+    color:#EEAD0E; 
+    border: 2px solid #5C4033;
+}
+.button1:hover {
+    background-color:white;
+    color:#EEAD0E;
+}
+.icon{
+
+ float:left;
+}
+.dropbtn {
+    background-color: #5C4033;
+    color:#EEAD0E;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtns {
+    background-color: #5C4033;
+    color:#EEAD0E;
+    padding:6px;
+    font-size:15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#5C4033;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #5C4033}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #5C4033;
+}
+.rightclass{
+float:right;
+margin-right:15px;
+padding-left:30px;
+padding-right:10px;
+}
+form {
+  background-color:#5C4033;
+  color:#EEAD0E;
+  margin: auto;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #EEAD0E;
+  text-decoration: none;
+  border-radius: 10px;
+  padding-top:20px;
+  padding-left:55px;
+  float:left;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  width: 225px;
+  display: block;
+  border: 1px solid #999;
+  height: 20px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+textarea#feedback {
+  width: 305px;
+  height: 100px;
+  display: block;
+}
+
+butt{
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #09C;
+  color: #fff;
+  font-family: Tahoma, Geneva, sans-serif;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999;
+}
+
+input.button:hover {
+  background: #fff;
+  color: #09C;
+}
+.fdiv{
+float:left;
+padding-top:10px;
+padding-left:30px;
+}
+.dropbtn1 {
+    background-color: #662020;
+    color: KHAKI;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn1:hover, .dropbtn1:focus {
+    background-color:  #662020;
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #662020;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown1-content a {
+    color: KHAKI;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown1 a:hover {background-color:  #cc0000}
+
+.show {display:block;}
+</style>
+<style>
+.button2 {
+     background-color: #662020;
+    color: KHAKI;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body bgcolor=#5C3317>
+<div class="icon">
+<img src="icon.png">
+</div>
+<div class="rightclass">
+<div class="dropdown">
+   <button class="dropbtn"><a href=# style="text-decoration:none;"><font color="#EEAD0E">About</font></a></button></a>
+</div>
+<div class="dropdown">
+   <button class="dropbtn"><a href=# style="text-decoration:none;"><font color="#EEAD0E">Contact us</font></a></button></a>
+	<div class="dropdown-content">
+		<button class="dropbtn"><ahref=#>044-12345678</a></button>
+		<button class="dropbtn"><ahref=#>98765 43210</a></button>
+</div>
+</div>
+</div>
+ 
+<div class="background"> 
+ <div class="transbox">
+ <div class="dropdown1">
+
+<button2 onclick="myFunction0()" class="dropbtns">Master piece</button2>
+  <div id="mydropdown10" class="dropdown1-content">
+      <a href="sci.html">title</a>
+   
+</div>
+</div>  
+<script>
+function myFunction0() {
+    document.getElementById("mydropdown10").classList.toggle("show");
+document.id=0;
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtns')) {
+
+    var dropdown1s = document.getElementsByClassName("dropdown1-content");
+    var i;
+    for (i = 0; i < dropdown1s.length; i++) {
+      var opendropdown1 = dropdown1s[i];
+      if (opendropdown1.classList.contains('show')) {
+        opendropdown1.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+   
+
+
+<div class="dropdown1">
+
+<button2 onclick="myFunction1()" class="dropbtns">Weekly reviews</button2>
+  <div id="mydropdown11" class="dropdown1-content">
+      <a href="health.html">Sunday</a>
+      <a href="sci.html">Monday</a>
+      <a href="fic.html">Tuesday</a>
+      <a href="max.html">Wednesday</a>
+      <a href="tech.html">Thursday</a>
+      <a href="psy.html">Friday</a>
+      <a href="health.html">Saturday</a>
+</div>
+</div>  
+<script>
+function myFunction1() {
+    document.getElementById("mydropdown11").classList.toggle("show");
+document.id=0;
+}
+
+// Close the dropdown1 if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtns')) {
+
+    var dropdown1s = document.getElementsByClassName("dropdown1-content");
+    var i;
+    for (i = 0; i < dropdown1s.length; i++) {
+      var opendropdown1 = dropdown1s[i];
+      if (opendropdown1.classList.contains('show')) {
+        opendropdown1.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<div class="dropdown1">
+
+<button2 onclick="myFunction2()" class="dropbtns">Monthly review</button2>
+  <div id="mydropdown12" class="dropdown1-content">
+      <a href="sci.html">January</a>
+      <a href="health.html">February</a>
+      <a href="max.html">March</a>
+      <a href="tech.html">April</a>
+      <a href="psy.html">May</a>
+      <a href="health.html">June</a>
+      <a href="sci.html">July</a>
+      <a href="max.html">August</a>
+      <a href="tech.html">September</a>
+      <a href="psy.html">October</a>
+      <a href="health.html">November</a>
+      <a href="sci.html">December</a>
+</div>
+</div>  
+<script>
+/* When the user clicks on the button2, 
+toggle between hiding and showing the dropdown1 content */
+function myFunction2() {
+    document.getElementById("mydropdown12").classList.toggle("show");
+document.id=0;
+}
+
+// Close the dropdown1 if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtns')) {
+
+    var dropdown1s = document.getElementsByClassName("dropdown1-content");
+    var i;
+    for (i = 0; i < dropdown1s.length; i++) {
+      var opendropdown1 = dropdown1s[i];
+      if (opendropdown1.classList.contains('show')) {
+        opendropdown1.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+  <div class="dropdown1">
+
+<button2 onclick="myFunction3()" class="dropbtns">  Genre  </button2>
+  <div id="mydropdown13" class="dropdown1-content">
+      <a href="sci.html">Science </a>
+      <a href="fic.html">Fiction </a>      
+      <a href="max.html">Mathematics </a>
+      <a href="tech.html">Technology </a>
+      <a href="psy.html">Psychology </a>
+      <a href="health.html">Healthy facts </a>
+      <a href="#"> </a>   
+</div>
+</div>  
+<script>
+/* When the user clicks on the button2, 
+toggle between hiding and showing the dropdown1 content */
+function myFunction3() {
+    document.getElementById("mydropdown13").classList.toggle("show");
+document.id=0;
+}
+
+// Close the dropdown1 if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtns')) {
+
+    var dropdown1s = document.getElementsByClassName("dropdown1-content");
+    var i;
+    for (i = 0; i < dropdown1s.length; i++) {
+      var opendropdown1 = dropdown1s[i];
+      if (opendropdown1.classList.contains('show')) {
+        opendropdown1.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<marquee  scrollamount="4" height=80% loop=INFINITE direction="up">
+<body bgcolor="#FCFCFC">
+<font face="monotype corsiva">
+<font color=#662020>
+<h1>NAME:NEHA<h1>
+<h2> Healthy Eating Tips </h2>
+<p>
+ Choose whole grains and potatoes which has havemore fibre, vitamins and minerals.
+Remember starchy foods contain fewer than half the calories of fats per gram
+<br>
+Choose a variety of fruit and vegetables as they contain different combinations of vitamins and minerals.
+Fresh, frozen, tinned and 100% fruit juices all count!
+Try grating vegetables like carrots and courgettes into bolognaise or add lots of vegetables to homemade tomato sauce and blend.
+<br>
+Remember that one portion of fish is approximately 140g cooked weight.
+Oily fish are one of the only natural food sources of vitamin D, important for bone health. Oily fish includes salmon, fresh tuna, sardines, mackerel and trout.
+Choose from fresh, frozen, smoked and canned, but remember that smoked fish contains salt, and canned can do, so check labels and pick lower salt varieties.
+<br>
+<br>
+<h1>NAME:Khousal<h1>
+<h2> pI and its history </h2>
+<p>
+ Using a compass, draw a circle. Take one piece of string and place it on top of the circle, exactly once around. Now straighten out the string; its length is called the circumference of the circle. Measure the circumference with a ruler. Next, measure the diameter of the circle, which is the length from any point on the circle straight through its center to another point on the opposite side. (The diameter is twice the radius, the length from any point on the circle to its center.) If you divide the circumference of the circle by the diameter, you will get approximately 3.14--no matter what size circle you drew! A larger circle will have a larger circumference and a larger radius, but the ratio will always be the same. If you could measure and divide perfectly, you would get 3.141592653589793238..., or pi. 
+<br>
+Otherwise said, if you cut several pieces of string equal in length to the diameter, you will need a little more than three of them to cover the circumference of the circle.
+
+Pi is most commonly used in certain computations regarding circles. Pi not only relates circumference and diameter. Amazingly, it also connects the diameter or radius of a circle with the area of that circle by the formula: the area is equal to pi times the radius squared. Additionally, pi shows up often unexpectedly in many mathematical situations. For example, the sum of the infinite series
+<br>
+<br>
+<h1>NAME:VARMA<h1>
+
+<h2> There's More to Life Than Being Happy</h2>
+<p>
+How do the happy life and the meaningful life differ? Happiness, they found, is about feeling good. Specifically, the researchers found that people who are happy tend to think that life is easy, they are in good physical health, and they are able to buy the things that they need and want. While not having enough money decreases how happy and meaningful you consider your life to be, it has a much greater impact on happiness. The happy life is also defined by a lack of stress or worry.
+<br>
+This uniqueness and singleness which distinguishes each individual and gives a meaning to his existence has a bearing on creative work as much as it does on human love. When the impossibility of replacing a person is realized, it allows the responsibility which a man has for his existence and its continuance to appear in all its magnitude. A man who becomes conscious of the responsibility he bears toward a human being who affectionately waits for him, or to an unfinished work, will never be able to throw away his life. He knows the "why" for his existence, and will be able to bear almost any "how."
+<br>
+<br>
+<h1>NAME:PRANAV<h1>
+
+<h2> CLOUD COMPUTING </h2>
+ As a general purpose technology in the IT (information technology) field, cloud computing has expanded incredibly since becoming available at the start of the century. However, despite the technology being a catchphrase in technology circles, it remains elusive as far as the definition is concerned. Indeed, cloud computing has often been compared to with the virtualization of such things as applications, computing power plus storage. In addition, it has been thought of as a form to deploy services that are termed as pay-as-you-go as well as perceived to look like grid computing. Nevertheless, cloud computing is widely known to share traits with these technology paradigms plus has more to offer. The NSIT (National Institute of Standards and Technology) explains cloud computing as a model which is pay-per-use and facilitates convenient and on-demand access to the network including computing resources. The computing resources (storage, applications, servers, network plus services) can also be swiftly provisioned plus released with negligible management service provider interaction. All in all cloud computing facilitates availability. 
+<br>
+In terms of operations in the service sector, the benefits of cloud computing lie in the technology’s potential to rationalize a range of IT processes. This includes user support as well as the ongoing management plus maintenance of company’s systems. Today, the service industry has millions of clients including some of the largest and innovative firms in the world. Expectedly, managing the industry’s operations and or growth necessitates improved systems to engage clients, consultants as well as the broader community via various techniques. IT-related operations throughout the service industry are no longer client/server based but internet or cloud based. Conclusively, the entire service industry continues to change as operations are left to expert providers. 
+<br>
+<br>
+<h1>NAME:RENUKA<h1>
+
+<h2> Environmentalism </h2>
+ was initially very annoyed by what I saw as a content-free overloading of the term, but the more I examined the various uses, the more I realized that there really is a common pattern to everything that is being subsumed by the term hacking. I now believe that the term hacking is not over-extended; it is actually under-extended. It should be applied to a much bigger range of activities, and to human endeavors on much larger scales, all the way up to human civilization.
+<br>
+I’ve concluded that we’re reaching a technological complexity threshold where hacking is going to be the main mechanism for the further evolution of civilization. Hacking is part of a future that’s neither the exponentially improving AI future envisioned by Singularity types, nor the entropic collapse envisioned by the Collapsonomics types. It is part of a marginally stable future where the upward lift of diminishing-magnitude technological improvements and hacks just balances the downward pull of entropic gravity, resulting in an indefinite plateau, as the picture above illustrates.
+
+I call this possible future hackstability.
+
+</p>
+</marquee>
+</div>
+
+
+
+ <div class="fdiv">
+<form action="insert.php" method="post">
+    <h1>Write Post</h1>   
+    <label>
+      <span>Your name</span><input id="name" type="text" name="name" placeholder="Enter your name" />
+    </label>
+
+    <label>
+      <span>Email Address</span><input id="email" type="text" name="email" placeholder="Enter your email id" />
+    </label>
+
+    <label>
+      <span>Phone No.</span><input id="subject" type="text" name="Ph no." placeholder="Enter your phone number" />
+    </label>
+
+    <label>
+      <span>Message</span><textarea id="feedback" name="feedback" placeholder="Text Limit 100 words"></textarea>
+       <button class="dropbtn"><font color:#EEAD0E><input type="button" value="Submit Form" /></font></button>
+    </label>
+</form>
+</div>
+
+</body>
+</html>

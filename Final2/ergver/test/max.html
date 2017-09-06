@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.background{
+   background-image: url("book1.jpg");
+background-color:#5C4033;
+    min-height: 650px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.transbox {
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    r:1px solid red;
+    margin: 100px 50px 70px 80px;
+    padding-right: 30px;   
+    padding-left: 80px;
+    float:right;
+    border: 3px solid #5C3317;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+.button {
+     
+    border: none;
+    color: #5C4033;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 300px 180px 170px 250px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float:left;
+}
+
+.button1 {
+    background-color:#5C4033;
+    color:#EEAD0E; 
+    border: 2px solid #5C4033;
+}
+.button1:hover {
+    background-color:white;
+    color:#EEAD0E;
+}
+.icon{
+
+ float:left;
+}
+.dropbtn {
+    background-color: #5C4033;
+    color:#EEAD0E;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtns {
+    background-color: #5C4033;
+    color:#EEAD0E;
+    padding:6px;
+    font-size:15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#5C4033;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #5C4033}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #5C4033;
+}
+.rightclass{
+float:right;
+margin-right:15px;
+padding-left:30px;
+padding-right:10px;
+}
+.dropbtn1 {
+    background-color: #662020;
+    color: KHAKI;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn1:hover, .dropbtn1:focus {
+    background-color:  #662020;
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #662020;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown1-content a {
+    color: KHAKI;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown1 a:hover {background-color:  #cc0000}
+
+.show {display:block;}
+</style>
+<style>
+.button2 {
+     background-color: #662020;
+    color: KHAKI;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+</style>
+</head>
+<body bgcolor=#5C3317>
+<div class="icon">
+<img src="icon.png">
+</div>
+<div class="rightclass">
+<div class="dropdown">
+   <button class="dropbtn"><a href=# style="text-decoration:none;"><font color="#EEAD0E">About</font></a></button></a>
+</div>
+<div class="dropdown">
+   <button class="dropbtn"><a href=# style="text-decoration:none;"><font color="#EEAD0E">Contact us</font></a></button></a>
+	<div class="dropdown-content">
+		<button class="dropbtn"><ahref=#>044-12345678</a></button>
+		<button class="dropbtn"><ahref=#>98765 43210</a></button>
+</div>
+</div>
+</div>
+<div class="background"> 
+ <div class="transbox">
+  <button class="dropbtns"><a href="button.html" style="text-decoration:none;"><font color="#EEAD0E">Postfeed</font></a></button>
+   
+ <div class="dropdown1">
+
+<button2 onclick="myFunction0()" class="dropbtns">Master piece</button2>
+  <div id="mydropdown10" class="dropdown1-content">
+      <a href="sci.html">title</a>
+   
+</div>
+</div>  
+<script>
+function myFunction0() {
+    document.getElementById("mydropdown10").classList.toggle("show");
+document.id=0;
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtns')) {
+
+    var dropdown1s = document.getElementsByClassName("dropdown1-content");
+    var i;
+    for (i = 0; i < dropdown1s.length; i++) {
+      var opendropdown1 = dropdown1s[i];
+      if (opendropdown1.classList.contains('show')) {
+        opendropdown1.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+   
+
+
+<div class="dropdown1">
+
+<button2 onclick="myFunction1()" class="dropbtns">Weekly reviews</button2>
+  <div id="mydropdown11" class="dropdown1-content">
+      <a href="health.html">Sunday</a>
+      <a href="sci.html">Monday</a>
+      <a href="fic.html">Tuesday</a>
+      <a href="max.html">Wednesday</a>
+      <a href="tech.html">Thursday</a>
+      <a href="psy.html">Friday</a>
+      <a href="health.html">Saturday</a>
+</div>
+</div>  
+<script>
+function myFunction1() {
+    document.getElementById("mydropdown11").classList.toggle("show");
+document.id=0;
+}
+
+// Close the dropdown1 if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtns')) {
+
+    var dropdown1s = document.getElementsByClassName("dropdown1-content");
+    var i;
+    for (i = 0; i < dropdown1s.length; i++) {
+      var opendropdown1 = dropdown1s[i];
+      if (opendropdown1.classList.contains('show')) {
+        opendropdown1.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<div class="dropdown1">
+
+<button2 onclick="myFunction2()" class="dropbtns">Monthly review</button2>
+  <div id="mydropdown12" class="dropdown1-content">
+      <a href="sci.html">January</a>
+      <a href="health.html">February</a>
+      <a href="max.html">March</a>
+      <a href="tech.html">April</a>
+      <a href="psy.html">May</a>
+      <a href="health.html">June</a>
+      <a href="sci.html">July</a>
+      <a href="max.html">August</a>
+      <a href="tech.html">September</a>
+      <a href="psy.html">October</a>
+      <a href="health.html">November</a>
+      <a href="sci.html">December</a>
+</div>
+</div>  
+<script>
+/* When the user clicks on the button2, 
+toggle between hiding and showing the dropdown1 content */
+function myFunction2() {
+    document.getElementById("mydropdown12").classList.toggle("show");
+document.id=0;
+}
+
+// Close the dropdown1 if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtns')) {
+
+    var dropdown1s = document.getElementsByClassName("dropdown1-content");
+    var i;
+    for (i = 0; i < dropdown1s.length; i++) {
+      var opendropdown1 = dropdown1s[i];
+      if (opendropdown1.classList.contains('show')) {
+        opendropdown1.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+  <div class="dropdown1">
+
+<button2 onclick="myFunction3()" class="dropbtns">  Genre  </button2>
+  <div id="mydropdown13" class="dropdown1-content">
+      <a href="sci.html">Science </a>
+      <a href="fic.html">Fiction </a>      
+      <a href="max.html">Mathematics </a>
+      <a href="tech.html">Technology </a>
+      <a href="psy.html">Psychology </a>
+      <a href="health.html">Healthy facts </a>
+      <a href="#"> </a>   
+</div>
+</div>  
+<script>
+/* When the user clicks on the button2, 
+toggle between hiding and showing the dropdown1 content */
+function myFunction3() {
+    document.getElementById("mydropdown13").classList.toggle("show");
+document.id=0;
+}
+
+// Close the dropdown1 if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtns')) {
+
+    var dropdown1s = document.getElementsByClassName("dropdown1-content");
+    var i;
+    for (i = 0; i < dropdown1s.length; i++) {
+      var opendropdown1 = dropdown1s[i];
+      if (opendropdown1.classList.contains('show')) {
+        opendropdown1.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+<body bgcolor="#FCFCFC">
+<font face="monotype corsiva">
+<font color=#662020>
+<h1>NAME:Khousal<h1>
+<h2> pI and its history </h2>
+<p>
+ Using a compass, draw a circle. Take one piece of string and place it on top of the circle, exactly once around. Now straighten out the string; its length is called the circumference of the circle. Measure the circumference with a ruler. Next, measure the diameter of the circle, which is the length from any point on the circle straight through its center to another point on the opposite side. (The diameter is twice the radius, the length from any point on the circle to its center.) If you divide the circumference of the circle by the diameter, you will get approximately 3.14--no matter what size circle you drew! A larger circle will have a larger circumference and a larger radius, but the ratio will always be the same. If you could measure and divide perfectly, you would get 3.141592653589793238..., or pi. 
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8" />
+	<title>Login Form</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+	<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<script src="assets/scripts/wow.min.js"></script>
+<script src="assets/scripts/wow.js"></script>
+	
+	
+
+	<link href="assets/css/pages/login-soft.css" rel="stylesheet" type="text/css"/>
+<link  rel="stylesheet" href="assets/css/animate.css">
+	<style type="text/css">
+	body {
+	/*background-image: url(images1/sherlock_wallpaper_photos_440_perfect.jpg);*/
+background-image: url(images1/sherlock-hd-wallpaper-games-movie-images-sherlock-wallpaper.jpg);
+ /*background-image: url(images1/1360-768-518301.jpg);*/
+ /*background-image: url(images1/1360-768-518303.jpg);*/
+
+display: block;
+	background-size: cover;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+.header{
+    left: 50%;
+    margin-left: -512px; 
+	  /* 50% */
+  }
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+.header{
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+}
+    </style>
+<script>
+new WOW().init();
+</script>
+</head>
+
+<body class="login">
+  <p>&nbsp;</p>
+     <p>&nbsp;</p> 
+     <p>&nbsp;</p>
+ 
+	
+	<div class="logo">
+	</div>
+	
+	<div class="content  wow zoomIn animated" data-wow-delay="0s">
+		
+		<form class="form-vertical login-form" action="" method="post">
+			<h3 align="center" class="form-title">Login to your account</h3>
+			<div class="alert alert-error hide">
+			  <button class="close" data-dismiss="alert"></button>
+				<span>Enter any username and password.</span>
+			</div>
+			<div class="control-group  wow zoomIn animated" data-wow-delay=".3s">
+				<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+				<div class="controls">
+			<div class="input-icon left">
+						<i class="icon-user"></i>
+					  <input class="m-wrap placeholder-no-fix" type="text" autocomplete="off" placeholder="Cognit ID" name="username"/>
+				  </div>
+			  </div>
+		  </div>
+			<div class="control-group wow zoomIn animated" data-wow-delay=".6s">
+				<label class="control-label visible-ie8 visible-ie9"></label>
+				<div class="controls">
+					<div class="input-icon left">
+						<i class="icon-lock"></i>
+						<input class="m-wrap placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password"/>
+					</div>
+				</div>
+			</div>
+			<div class="form-actions wow zoomIn animated" data-wow-delay=".9s">
+				<label class="checkbox">
+				<input type="checkbox" name="remember" value="1"/> Remember me
+				</label>
+				<button type="submit" class="btn blue pull-right">
+				Login <i class="m-icon-swapright m-icon-whitewow zoomIn animated" data-wow-delay="2s"> </i>
+				</button>            
+			</div>
+			
+		<hr>
+			<div class="create-account wow fadeInUp animated" data-wow-delay="1.2s">
+				<p>
+				Don't have an account yet?
+			  </p>
+				
+				<p><a href="javascript:;" id="register-btn" >Create an account</a>
+			  </p>
+			</div>
+		</form>
+		
+		<form class="form-vertical register-form" action="index.html" method="post">
+			<h3 >&nbsp;</h3>
+			<div class="form-actions">			  </div>
+		</form>
+
+	</div>
+	</div>
+</html>

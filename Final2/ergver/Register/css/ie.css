@@ -1,0 +1,57 @@
+/* ====================================================
+ * Company: Unity Technologies
+ * Author:  Rickard Andersson, rickard@unity3d.com
+======================================================= */
+
+/****************************************
+  ==== IE CRAP!
+****************************************/
+
+header.section-header div.top-fill div.fill { background: #222c37; }
+nav.sub-nav div.sub-fill { background: #00cccc; }
+div.front-slider ul li.promotion { display: none;  }
+div.front-slider ul li.promotion.current { display: block; }
+div.front-slider ul li.promotion img, div.front-slider ul li div.content, div.background-slider ul li img, div.background-slider ul li div.caption,
+div.header-slider ul.c li div.image img, div.header-slider ul.c li div.header-content { left: 0 !important; }
+
+/****************************************
+  ==== BACKGROUNDS
+****************************************/
+
+div.background { height: 400px; }
+.showcase-case-stories .background { height: 550px; }
+.showcase-case-story .background { height: 400px; }
+.showcase-trailers .background { background: #222; height: 250px; }
+.learn-home .background { height: 450px; background-image: url(../images/learn-chalkboard.jpg); }
+.whatisunity .background { height: 550px; background-image: url(../images/what-is-unity.jpg); }
+.community-home .background { height: 400px; background-image: url(../images/community.jpg); }
+.blackberry .background { height: 330px; background-image: url(../images/blackberry.jpg); }
+.jobs .background { height: 330px; background-image: url(../images/jobs.jpg); }
+.company-fastfacts .background { height: 500px; background-image: url(../images/world-offices.jpg); }
+.company-brand .background { background-image: url(../images/brand-header.jpg); }
+.industries-gambling .background { height: 550px; background-image: url(../images/gambling.jpg); }
+
+/****************************************
+  ==== HEROS
+****************************************/
+
+.front .hero { height: 425px; }
+.showcase .hero { height: 425px; }
+.showcase-gallery .hero { height: 425px; }
+.showcase-case-stories .hero { height: 425px; }
+.showcase-case-story .hero { height: 275px; }
+.learn-home .hero { height: 325px; }
+.live-training .hero { height: 350px; }
+.community-home .hero { height: 290px; }
+.blackberry .hero { height: 205px; }
+.whatisunity .hero { height: 425px; }
+.whatisunity-old .hero { height: 425px; }
+.company .hero, .people .hero { margin-bottom: 250px; }
+.jobs .hero { height: 205px; }
+.company-fastfacts .hero { height: 375px; }
+.company-brand .hero { height: 275px; }
+.industries .hero { height: 425px; }
+.industries-aec .hero { height: 425px; }
+.industries-sim .hero { height: 425px; }
+.industries-gambling .hero { height: 425px; }
+

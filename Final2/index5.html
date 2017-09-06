@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> COGNIT 15 </title>
+
+
+<meta http-equiv="refresh" content="7;url=home3.html" /> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Cognit is a National Level Technical Symposium held at M.N.M. Jain Engineering College." />
+<meta name="generator" content="Drupal" />
+
+<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize2.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo2.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout-simple2.css" />
+        <link rel="canonical" href="https://cognit15.in/" />
+<link rel="shortlink" href="https://cognit15.in/" />
+
+
+</head>
+<body bgcolor="#000033">
+
+
+<div id="container" class="container">
+			<div class="intro">
+                <img class="intro__image" src="images/header03.jpg" alt="Iceland galcier"/>
+				<div class="intro__content">
+					<font color="#FFFFFF"><h1 align="center" class="intro__title">Cognit '15</h1></font>
+					
+						<div class="intro__description">
+						  <div align="center"><h1><small>From</small> CSE Department Of MNMJEC.</h1>
+                          <br/><br/><br/><br/><br/><br/><br/>
+							
+						  </div>
+						  <center><button class="trigger">
+							<svg width="100%" height="100%" viewBox="0 0 60 60" preserveAspectRatio="none">
+								<g class="icon icon--grid">
+									<rect x="32.5" y="5.5" width="22" height="22"/>
+									<rect x="4.5" y="5.5" width="22" height="22"/>
+									<rect x="32.5" y="33.5" width="22" height="22"/>
+									<rect x="4.5" y="33.5" width="22" height="22"/>
+							</g>
+						  </svg>
+							<span>View content</span>
+						</button></center>
+						</div>
+				</div><!-- /intro__content -->
+			</div><!-- /intro -->
+		<section class="items-wrap">
+        
+
+
+
+
+
+
+
+
+
+</section>
+        </div>
+		
+		<script src="js/classie2.js"></script>
+		<script>
+			(function() {
+				var container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+                       
+				function toggleContent() {
+					if( classie.has( container, 'container--open' ) ) {
+						classie.remove( container, 'container--open' );
+						classie.remove( trigger, 'trigger--active' );
+						
+						window.addEventListener( 'scroll', noscroll );
+					}
+					else {
+						classie.add( container, 'container--open' );
+						classie.add( trigger, 'trigger--active' );
+						window.removeEventListener( 'scroll', noscroll );
+						window.location.href='home3.html';
+					}
+				}
+
+				function noscroll() {
+					window.scrollTo( 0, 0 );
+				}
+
+				// reset scrolling position
+				document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+				// disable scrolling
+				window.addEventListener( 'scroll', noscroll );
+
+				trigger.addEventListener( 'click', toggleContent );
+            
+                 
+				// For Demo purposes only (prevent jump on click)
+				[].slice.call( document.querySelectorAll('.items-wrap a') ).forEach( function(el) { el.onclick = function() { return false; } } );
+			        
+			
+			}
+			
+			
+			
+			)();
+			
+			
+		</script>
+
+
+             
+             
+             				
+
+</body>
+</html>
+
+
+
